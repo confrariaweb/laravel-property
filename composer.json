@@ -1,0 +1,45 @@
+{
+    "name": "confrariaweb/laravel-property",
+    "version": "dev-master",
+    "description": "Laravel Real Estate Package",
+    "keywords": [
+        "property",
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Rafael Zingano",
+            "email": "confrariaweb@gmail.com"
+        }
+    ],
+    "require": {
+        "confrariaweb/laravel-account": "dev-master",
+        "confrariaweb/laravel-acl": "dev-master",
+        "confrariaweb/laravel-cielo": "dev-master",
+        "confrariaweb/laravel-document": "dev-master",
+        "confrariaweb/laravel-domain": "dev-master",
+        "confrariaweb/laravel-file": "dev-master",
+        "confrariaweb/laravel-location": "dev-master",
+        "confrariaweb/laravel-site": "dev-master",
+        "confrariaweb/laravel-tag": "dev-master",
+        "confrariaweb/laravel-template": "dev-master",
+        "confrariaweb/laravel-user": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ConfrariaWeb\\Property\\": "src",
+            "ConfrariaWeb\\Property\\Databases\\Seeds\\": "databases/Seeds"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ConfrariaWeb\\Property\\Providers\\PropertyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
